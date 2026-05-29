@@ -88,27 +88,15 @@ export interface Customer {
   alamat?: string;
   userId: string;
   createdAt: string;
-  panggilan?: string;
-  parfumFavorit?: string;
-  lokasiAntarJemput?: string;
-  latitude?: number;
-  longitude?: number;
 }
 
 export interface Service {
   id: string;
   nama: string;
-  tipe: string; // "Kiloan" | "Satuan" | "Meter" or customizable
+  tipe: "Kiloan" | "Satuan" | "Meter";
   harga: number;
   durasiJam: number;
   userId: string;
-  proses?: string[];
-  durasiValue?: number;
-  durasiTipe?: "Jam" | "Hari";
-  minimalKuantitas?: number;
-  kategori?: string;
-  sematkan?: boolean;
-  bahanBahan?: string[];
 }
 
 export interface LaundryTransaction {
